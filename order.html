@@ -1,0 +1,398 @@
+<!-- ✅ order.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="stylesheet" href="css/order.css">
+        <title> The Gaming Galaxy </title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <section class="nav">
+                <img src="imgs/logo.ico" alt="logo" class="nav-logo">
+                <h2>THE GAMING GALAXY</h2>
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+                <label for="menu-toggle" class="menu-toggle-label">☰</label>
+                
+                <ul class="nav-links"> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="upcoming-games.html">Upcoming Games</a></li>
+                    <li><a href="consoles.html">Consoles</a></li>
+                    <li><a href="peripherals.html">Peripherals</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+                </section>
+            </nav>
+        </header>
+  <main>
+    <div class="categories" id="products"></div>
+
+    <div id="cart-section">
+      <h2>Cart Summary</h2>
+    <table id="cart-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body">
+       
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2"><strong>Total</strong></td>
+          <td id="total-price">0 LKR</td>
+        </tr></tfoot>
+    </table>
+
+    <div class="carts-btn">
+      <button id="order-favs">Add to Favourites</button>
+      <button id="apply-favs">Apply favourites</button>
+      <button id="checkout">Buy Now</button>
+    </div>
+  </div>
+
+    <div class="error-msg">
+      <p id="msg"></p>
+    </div>
+
+    <div class="grid">
+      <h1>PROCESSORS</h1>
+      <div class="category">
+        <div class="item">
+          <img src="imgs/INTEL-CORE-ULTRA7.png" alt="INTEL CORE ULTRA 7 PROCESSOR 265K">
+          <h4>INTEL CORE ULTRA 7 PROCESSOR 265K</h4>
+          <div class="price"  data-price="120000">120,000 LKR</div> 
+          <label>Qty 
+          <input type="number" class="qty" name="INTEL® CORE ULTRA 7 PROCESSOR 265K" min="1" value="1" max="10">  </label>
+          <button class="Add-btn">Add to cart</button>
+          <br>
+        </div>
+
+        <div class="item">
+          <img src="imgs/AMD-RYZEN-5-7600X.png" alt="AMD RYZEN 5 7600X DESKTOP PROCESSOR"><br>
+          <h4>AMD RYZEN 5 7600X DESKTOP PROCESSOR</h4>
+          <div class="price" data-price="67500">67,500 LKR</div>
+          <label>Qty
+          <input type="number" class="qty" name="AMD RYZEN 5 7600X DESKTOP PROCESSOR" min="1" value="1" max="10" ></label>
+          <button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/AMD-RYZEN-5-2600.png" alt="AMD RYZEN 5 2600 PROCESSOR WITH WRAITH STEALTH COOLER"><br>
+          <h4>AMD RYZEN 5 2600 PROCESSOR WITH WRAITH STEALTH COOLER</h4>
+          <div class="price"  data-price="26750">26,750 LKR</div>
+          <label>Qty
+          <input type="number" class="qty" name="AMD RYZEN 5 2600 PROCESSOR WITH WRAITH STEALTH COOLER" min="1" value="1" max="10"></label>
+          <button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/AMD-RYZEN-9-3900X.webp" alt="AMD RYZEN 9 3900X"><br>
+          <h4>AMD RYZEN 9 3900X</h4>
+          <div class="price" data-price="125000">125,000 LKR</div>
+          <label>Qty
+          <input type="number" class="qty" name="AMD RYZEN 9 3900X" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/INTEL-CORE19-14900KS.png" alt="INTEL CORE 19-14900KS PROCESSOR 36M CACHE UP TO 6.2 GHZ DESKTOP PROCESSOR"><br>
+          <h4>INTEL CORE 19-14900KS PROCESSOR 36M CACHE UP TO 6.2 GHZ DESKTOP PROCESSOR</h4>
+          <div class="price" data-price="220000">220,000 LKR</div>
+          <label>Qty
+          <input type="number" class="qty" name="INTEL® CORE 19-14900KS PROCESSOR 36M CACHE UP TO 6.2 GHZ DESKTOP PROCESSOR" min="1" value="1" max="10"></label>
+          <button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/INTEL-COREi7.webp" alt="INTEL CORE i7-3770 PROCESSOR"><br>
+          <h4>INTEL CORE i7-3770 PROCESSOR</h4>
+          <div class="price" data-price="10500">10,500 LKR</div>
+          <label>Qty
+          <input type="number" class="qty" name="INTEL® CORE i7-3770 PROCESSOR" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+      </div>
+
+       <h1>GRAPHIC CARDS</h1>
+      <div class="category">
+      
+        <div class="item">
+          <img src="imgs/ASUS-DUAL-GEFORCE-RTX4060V2GDDR6.png" alt="ASUS DUAL GEFORCE RTX 4060 V2 GDDR6"><br>
+          <h4>ASUS DUAL GEFORCE RTX 4060 V2 GDDR6</h4> 
+            <div class="price" data-price="146000">146,000 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" name="ASUS DUAL GEFORCE RTX 4060 V2 GDDR6" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/GIGABYTE-AORUSRADEON-RX-6900XT-XTREME.webp" alt="GIGABYTE AORUS RADEON RX 6900XT XTREME WATERFORCE WB GDDR6"><br>
+          <h4>GIGABYTE AORUS RADEON RX 6900XT XTREME WATERFORCE WB GDDR6 </h4>
+            <div class="price" data-price="280000">280,000 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" name="GIGABYTE AORUS RADEON RX 6900XT XTREME WATERFORCE WB GDDR6" min="1" value="1" max="10" ></label>
+            <button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/MSI-GEFORCE-RTX-4060.webp" alt="MSI GEFORCE RTX 4060 TI GAMING X GDDR6X SLIM WHITE GRAPHICS CARD"><br>
+          <h4>MSI GEFORCE RTX 4060 TI GAMING X GDDR6X SLIM WHITE GRAPHICS CARD </h4>
+            <div class="price" data-price="271000">271,000 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" name="MSI GEFORCE RTX 4060 TI GAMING X GDDR6X SLIM WHITE GRAPHICS CARD" min="1" value="1" max="10" ></label>
+            <button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/ASUSGEFORCERTX2060.png" alt="ASUS GEFORCE RTX™ 2060 EVO 6GB SI GDDR6 "><br>
+          <h4>ASUS GEFORCE RTX™ 2060 EVO 6GB SI GDDR6 </h4>
+            <div class="price" data-price="68500">68,500 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" name="ASUS GEFORCE RTX™ 2060 EVO 6GB SI GDDR6 " min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/GIGABYTE-GEFORCE-RTX-3090.webp" alt="GIGABYTE GEFORCE RTX 3090 TI GAMING OC "><br>
+          <h4>GIGABYTE GEFORCE RTX 3090 TI GAMING OC </h4>
+            <div class="price" data-price="550000">550,000 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" name="GIGABYTE GEFORCE RTX 3090 TI GAMING OC" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item" >
+          <img src="imgs/MSI-GEFORCE-RTX-4060TIX-GC30-MONSTER-HUNTER-EDITION.png" alt="MSI GEFORCE RTX 4060 TI X GC30 MONSTER HUNTER EDITION GRAPHICS CARD"><br>
+          <h4>MSI GEFORCE RTX 4060 TI X GC30 MONSTER HUNTER EDITION GRAPHICS CARD</h4> 
+            <div class="price" data-price="207000">207,000 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" name="MSI GEFORCE RTX 4060 TI X GC30 MONSTER HUNTER EDITION GRAPHICS CARD" min="1" value="1" max="10" ></label>
+            <button class="Add-btn">Add to cart</button>
+        </div>
+      </div>
+
+      <h1>MOTHERBOARDS</h1>
+      <div class="category">
+        <div class="item">
+          <img src="imgs/AFOX-H61-MA2-V4-2nd3rd-Gen-M.2-NVME-Supported-MOTHERBOARD.png" alt="AFOX H61-MA2-V4 2nd/3rd Gen M.2 NVME Supported MOTHERBOARD"><br>
+          <h4>AFOX H61-MA2-V4 2nd/3rd Gen M.2 NVME Supported MOTHERBOARD</h4>
+             <div class="price" data-price="18500">18,500 LKR</div>
+             <label>Qty
+          <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+         
+        </div>
+
+        <div class="item">
+          <img src="imgs/ARKTEK-AK-H110MEGDDR4.png" alt="ARKTEK AK-H110M EG DDR4 6th/7th/8th/9th Gen M.2 NVME Supported MOTHERBOARD"><br>
+          <h4>ARKTEK AK-H110M EG DDR4 6th/7th/8th/9th Gen M.2 NVME Supported MOTHERBOARD</h4>
+            <div class="price" data-price="22000">22,000 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+          
+        </div>
+
+        <div class="item">
+          <img src="imgs/ASROCK-H310M-HD.png" alt="ASROCK H310M-HDV/M.2 "><br>
+          <h4>ASROCK H310M-HDV/M.2 </h4>
+            <div class="price" data-price="24500">24,500 LKR</div>
+            <label>Qty
+          <input type="number" class="qty"  min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/ASROCK-H81M-DS2-MOTHERBOARD(Refurbished).png" alt="ASROCK H81M-DS2 MOTHERBOARD (Refurbished)"><br>
+          <h4>ASROCK H81M-DS2 MOTHERBOARD (Refurbished)</h4>
+             <div class="price" data-price="8500">8,500 LKR</div>
+             <label>Qty
+          <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/ASUS-PRIME-B550M-A.png" alt="ASUS PRIME B550M-A"><br>
+          <h4>ASUS PRIME B550M-A</h4>
+            <div class="price" data-price="50000">50,000 LKR</div>
+            <label>Qty
+          <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/ASUS-PRIME-B650M-A-WIFI.png" alt="ASUS PRIME B650M-A WIFI"><br>
+          <h4>ASUS PRIME B650M-A WIFI</h4>
+             <div class="price" data-price="89000">89,000 LKR</div>
+             <label>Qty
+          <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/ASUS-ROGSTRIX-B250.png" alt="ASUS ROG STRIX B250F GAMING MOTHERBOARD"><br>
+          <h4>ASUS ROG STRIX B250F GAMING MOTHERBOARD</h4>
+            <div class="price" data-price="22000">22,000 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/ROG-STRIX-Z790-A-GAMING-WIFI-D4.webp" alt="ASUS ROG STRIX Z790-A GAMING WIFI D4 MOTHER BOARD"><br>
+          <h4>ASUS ROG STRIX Z790-A GAMING WIFI D4 MOTHER BOARD </h4>
+            <div class="price" data-price="137000">137,000 LKR</div>
+            <label>Qty
+          <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+      </div>
+
+      <h1>MEMORY</h1>
+      <div class="category" >
+       
+        <div class="item">
+          <img src="imgs/ADATA-RAM-XPG-GAMMIX-8GB-DDR4-3200MHZ.png" alt="ADATA RAM XPG GAMMIX 8GB DDR4 3200MHZ"><br>
+          <h4>ADATA RAM XPG GAMMIX 8GB DDR4 3200MHZ</h4>
+             <div class="price" data-price="8500">8,500 LKR</div>
+             <label>Qty
+            <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/CORSAIR-DOMINATOR-PLATINUM-RGB-32GB-2x16GB-DDR5-5600Mhz-Kit.webp " alt=""><br>
+          <h4>CORSAIR DOMINATOR PLATINUM RGB 32GB (2X16GB) DDR5 5200MHZ C40 MEMORY KIT BLACK</h4> 
+            <div class="price" data-price="100000">100,000 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/CORSAIR-VENGEANCE-LPX16GB.png" alt=""><br>
+          <h4>CORSAIR VENGEANCE LPX 16GB DDR4 3200MHZ </h4>
+            <div class="price" data-price="10500">10,500 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/CORSAIR-VENGEANCE-RGB-32GB.png" alt="CORSAIR VENGEANCE RGB 32GB (2X16) DDR5 DRAM 6000MHZ AMD EXPO & INTEL XMP MEMORY"><br>
+          <h4>CORSAIR VENGEANCE RGB 32GB (2X16) DDR5 DRAM 6000MHZ AMD EXPO & INTEL XMP MEMORY</h4>
+            <div class="price" data-price="40000">40,000 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/LEXAR-8GB.webp" alt="LEXAR 8GB DDR4 (1 x 8GB) 3200MHz"><br>
+          <h4>LEXAR 8GB DDR4 (1 x 8GB) 3200MHz</h4>
+            <div class="price" data-price="6500">6,500 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" min="1" value="1" max="10"></label><button class="Add-btn">Add to cart</button>
+        </div>
+      </div>
+        <h1>STORAGE</h1>
+      <div class="category">
+
+        <div class="item">
+          <img src="imgs/ADDLINK-S20-120GB-SSD3DNAND2.5NCH.png" alt="ADDLINK S20 120GB SSD 3D NAND 2.5 INCH "><br>
+          <h4>ADDLINK S20 120GB SSD 3D NAND 2.5 INCH </h4>
+            <div class="price" data-price="5000">5,000 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/ADDLINK-S70-1TB-SSDNVMEPCIEGEN3X4M.2.png" alt="ADDLINK S70 1TB SSD NVME PCIE GEN3X4 M.2"><br>
+          <h4>ADDLINK S70 1TB SSD NVME PCIE GEN3X4 M.2 </h4>
+            <div class="price" data-price="18000">18,000 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/ASUS-FX-USB-3.1-PORTABLE-HARD-DRIVE-1TB.webp" alt="ASUS FX USB 3.1 PORTABLE HARD DRIVE 1TB WITH AURA SYNC RGB "><br>
+          <h4>ASUS FX USB 3.1 PORTABLE HARD DRIVE 1TB WITH AURA SYNC RGB </h4>
+            <div class="price" data-price="20000">20,000 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/CORSAIR-MP600-PROXT1TB.png" alt="CORSAIR MP600 PRO XT 1TB PCLE GEN4 M.2 NVME SSD"><br>
+          <h4>CORSAIR MP600 PRO XT 1TB PCLE GEN4 M.2 NVME SSD </h4>
+            <div class="price" data-price="33000">33,000 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/TRANSCEND-4TB.png" alt="TRANSCEND 4TB USB 3.1 EXTERNAL HARD DRIVE"><br>
+          <h4>TRANSCEND 4TB USB 3.1 EXTERNAL HARD DRIVE</h4>
+            <div class="price" data-price="42000">42,000 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/WESTERN-DIGITAL.png" alt="WESTERN DIGITAL MY PASSPORT 2TB EXTERNAL HARD DRIVE"><br>
+          <h4>WESTERN DIGITAL MY PASSPORT 2TB EXTERNAL HARD DRIVE</h4>
+             <div class="price" data-price="26000">26,000 LKR</div>
+             <label>Qty
+             <input type="number" class="qty" min="1" value="1" max="10" ></label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/SEAGATE-8TB.png" alt="SEAGATE 8TB NAS IRONWOLF HARD DRIVE"><br>
+          <h4>SEAGATE 8TB NAS IRONWOLF HARD DRIVE</h4>
+            <div class="price" data-price="86000">86,000 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" min="1" value="1" max="10" > </label><button class="Add-btn">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <img src="imgs/SEAGATE-2TB.webp" alt="SEAGATE 2TB LAPTOP HARD DRIVE "><br>
+          <h4>SEAGATE 2TB LAPTOP HARD DRIVE </h4>
+            <div class="price" data-price="37500">37,500 LKR</div>
+            <label>Qty
+            <input type="number" class="qty" min="1" value="1" max="10" ></label>  <button class="Add-btn">Add to cart</button>
+        </div>
+      </div>
+    </div>
+</main>
+
+<footer>
+  <section class="footer">
+  <img src="imgs/logo.ico" alt="footer logo" class="footer-logo">
+  <div class="links">
+      <div class="quick">
+          <h3>Quick Links</h3>
+          <ol>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="upcoming-games.html">Upcoming Games</a></li>
+              <li><a href="consoles.html">Consoles</a></li>
+              <li><a href="peripherals.html">Peripherals</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="order.html">Order</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+          </ol>
+      </div>
+      <div class="contact">
+          <h3>Contact Us</h3>
+          <ul>
+              <li><a href="mailto:sales@gamingalaxy.lk">sales@gamingalaxy.lk</a></li>
+              <li>+94 777 982 640</li>
+          </ul>
+      </div>
+      <div class="follow">
+          <h3>Follow Us</h3>
+          <ul>
+              <li><a href="https://tiktok.com" target="_blank"><img src="imgs/icons8-tiktok-48.png" alt="tiktok"></a></li>
+              <li><a href="https://instagram.com" target="_blank"><img src="imgs/icons8-instagram-48.png" alt="instagram"></a></li>
+          </ul>
+      </div>
+  </div>
+  </section>
+</footer>
+<script src="/js/order.js" defer></script>
+</body>
+</html>
